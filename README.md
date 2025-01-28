@@ -1,0 +1,2 @@
+# Core Data Asynchronous Fetch and Save Bug
+This repository demonstrates a common and subtle bug in Objective-C when using Core Data with asynchronous operations.  The issue involves fetching data in a background thread, modifying it, and then attempting to save the context on the main thread. Due to the asynchronous nature, the objects might become detached from the context, leading to unexpected save failures. The provided code and solution highlight this issue and demonstrate how to address it.
